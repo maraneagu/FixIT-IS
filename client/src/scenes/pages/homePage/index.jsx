@@ -15,6 +15,8 @@ const HomePage = () => {
   // Fetching the _id and picturePath of the user from the Redux store
   const { _id, picturePath } = useSelector((state) => state.user);
 
+  
+
   // Setting up state for the search query
   const [searchQuery, setSearchQuery] = useState("");
 

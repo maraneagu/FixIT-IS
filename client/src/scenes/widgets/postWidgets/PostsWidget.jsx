@@ -12,6 +12,9 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
   const category = useSelector((state) => state.category);
   const searchQuery = useSelector((state) => state.searchQuery);
+
+  const filter = useSelector((state) => state.filter);
+  
   const [posts, setPostsState] = useState([]);
   const [loading, setLoading] = useState(true);
   
